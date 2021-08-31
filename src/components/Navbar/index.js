@@ -3,7 +3,7 @@ import {Nav,NavbarContainer,MobileIcon,NavLogo,NavMenu,NavItem,NavLinks,NavBtn,N
 import {FaBars} from 'react-icons/fa'
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return(
     <div className="navbarr">
   <Nav>
@@ -11,7 +11,7 @@ const Navbar = () => {
   <NavLogo to="/">
   DappTIET
   </NavLogo>
-  <MobileIcon>
+  <MobileIcon onClick={toggle}>
   <FaBars />
   </MobileIcon>
   <NavMenu>

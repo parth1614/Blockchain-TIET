@@ -3,3 +3,19 @@
   padding:0;
   font-family: 'Encode Sans Expanded' , Sans Serif;
 }
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #01bf71;
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+body{
+  background-color: black;
+}
+

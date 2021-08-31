@@ -4,8 +4,8 @@ import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
 background: #000;
-height: 80px;
- width:100%;
+// height: 80px;
+//  width:100%;
  margin-top: -8px;
  margin-left: -5px;
 display:flex;
@@ -39,9 +39,17 @@ cursor: pointer;
 font-size: 1.5rem;
 display:flex;
 align-items: center;
-margin-left: -10px;
+ margin-left: 22px;
 font-weight: bold;
+font-family: cursive;
 text-decoration: none;
+
+&:hover{
+  cursor: pointer;
+    transition: all .3s ease-in-out;
+    // padding-bottom:0.3rem;
+    color: #fff;
+}
 `
 
 export const MobileIcon = styled.div`
@@ -66,6 +74,7 @@ list-style:none;
 text-align:center;
 margin-right: -22px;
 
+
 @media screen and (max-width:768px){
 display:none;
 }
@@ -87,6 +96,11 @@ cursor:pointer;
 &.active{
   border-bottom: 3px solid #01bf71;
 }
+
+&:hover{
+  color: #01bf71;
+  transition: 0.2s ease-in-out;
+}
 `
 
 export const NavBtn = styled.nav`
@@ -94,7 +108,9 @@ display: flex;
 align-items: center;
 
 @media screen and (max-width:768px)
-display: none;
+{
+  display: none;
+}
 `
 
 export const NavBtnLink = styled(LinkR)`
