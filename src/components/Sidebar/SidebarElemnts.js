@@ -7,7 +7,7 @@ export const SidebarContainer = styled.aside`
 position: absolute;
 z-index: 999;
 height: 100%
-width: 100%
+// width: 100%
 background: white;
 background: #0d0d0d;
 display: grid;
@@ -18,7 +18,7 @@ border-radius: 25px;
 transition: 0.3s ease-in-out;
 opacity: ${({isOpen})=>(isOpen ? '100%' : '0')};
 top: ${({isOpen})=> (isOpen ? '0' : '-100%')};
-
+width: ${({isOpen})=> (isOpen ? '100%' : '0')};
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -46,8 +46,10 @@ grid-template-columns: 1fr;
 grid-template-rows: repeat(6, 80px);
 text-align:center;
 
+
 @media screen and (max-width:480px){
   grid-template-rows: repeat(6,60px);
+ 
 }
 `
 
