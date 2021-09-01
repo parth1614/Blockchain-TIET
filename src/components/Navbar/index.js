@@ -9,7 +9,7 @@ const Navbar = ({toggle}) => {
   <Nav>
   <NavbarContainer>
   <NavLogo to="/">
-  DappTIET
+  BlockTiet
   </NavLogo>
   <MobileIcon onClick={toggle}>
   <FaBars />
