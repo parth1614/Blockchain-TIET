@@ -1,5 +1,6 @@
 import React from 'react';
-import {Nav,NavbarContainer,MobileIcon,NavLogo,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from './NavbarElements';
+import Video from '../../video/BlockchainTIET_Logo1.mp4';
+import {Nav,NavbarContainer,MobileIcon,NavLogo,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink, VideoBg} from './NavbarElements';
 import {FaBars} from 'react-icons/fa'
 import './Navbar.css'
 
@@ -8,8 +9,8 @@ const Navbar = ({toggle}) => {
     <div className="navbarr">
   <Nav>
   <NavbarContainer>
-  <NavLogo to="/">
-  BlockTiet
+  <NavLogo >
+  <VideoBg to="/" autoPlay loop muted src={Video} type='video/mp4'/>
   </NavLogo>
   <MobileIcon onClick={toggle}>
   <FaBars />
